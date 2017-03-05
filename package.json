@@ -5,11 +5,12 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
-    "test": "mocha test"      
+    "test": "mocha test"
   },
   "author": "nightcrawler",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.15.0",
     "loadash": "0.0.1"
   },
   "devDependencies": {
