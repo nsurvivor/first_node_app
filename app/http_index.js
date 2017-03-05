@@ -9,7 +9,16 @@ const requestHandler = (request,response) => {
 
 const httpServer = http.createServer(requestHandler)
 
+/*
 httpServer.listen(port,(err)=>{
+	if(err){
+		return console.log('ERROR:something bad happened',err)
+	}
+	console.log(`Server listening on ${port}`)
+})
+*/
+
+httpServer.listen(port,function(err){
 	if(err){
 		return console.log('ERROR:something bad happened',err)
 	}
