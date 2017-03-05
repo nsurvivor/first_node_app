@@ -18,6 +18,7 @@ httpServer.listen(port,(err)=>{
 })
 */
 
+console.log('Rewriting app in ES5 style of anon function')
 httpServer.listen(port,function(err){
 	if(err){
 		return console.log('ERROR:something bad happened',err)
