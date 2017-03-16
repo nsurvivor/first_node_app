@@ -1,1 +1,29 @@
 <h2>Hello {{name}}<h2>
+<p>
+    <table border=1>
+        <thead>
+            <th>Name</th>
+            <th>Vehicle Type</th>
+            <th>Date of Renewal</th>
+            <th>Vehicle Number</th>
+        </thead>
+        <tbody>
+            {{#each Bikers}}
+            <tr>
+                <td>
+                    {{name}}
+                </td>
+                <td>
+                    {{type}}
+                </td>
+                <td>
+                    {{dor}}
+                </td>
+                <td>
+                    {{no}}
+                </td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</p>
